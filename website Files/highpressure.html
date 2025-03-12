@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kwaduba Trading Enterprise</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style>
+.section1{
+    background-image: url("photos/IMG-20240718-WA0028.jpg");
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+}
+.informer-block{
+    text-align: center;
+}
+.section2{
+    height: 200vh;
+    background-color: #FFDD03;
+}
+.section3{
+    height: 150vh;
+   
+}
+@media (max-width:768px) {
+    .informer-block{
+        max-width: 400px;
+        padding: 2px;
+    }
+    .informer-block h1{
+        font-size: 0.8em;
+    }
+}
+@media (max-width:480px) {
+    .informer-block{
+        width: 180px;
+    }
+    .informer-block h1{
+        font-size: 0.5em;
+    }
+    .section2{
+        height: max-content;
+        
+    }
+    .section2 h2{
+        font-size: 3em;
+        font-weight: bold;
+    }
+    
+}
+</style>
+
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="Photos/logo.png" alt="Kwaduba Trading Enterprise Logo" class="logo">
+            <h1>Kwaduba Trading Enterprise</h1>
+            <button class="icon" onclick=showSidebar()> 
+                <i class="fa fa-bars" ></i></button>
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><i class="fa-solid fa-x" id="close"></i></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li class="sidebardropdown" onclick= showService()>
+                    <a href="#"><i class="fa-solid fa-caret-down"></i> Services</a>
+                    <div class="sidebardropdown-content">
+                        <a href="mining.html">Mining Division</a>
+                        <a href="construction.html">Building And Civil Construction</a>
+                        <a href="highpressure.html">High Pressure Cleaning Division</a>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li class="dropdown">
+                    <a href="#">Services <i class="fa-solid fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="mining.html">Mining Division</a>
+                        <a href="construction.html">Building And Civil Construction</a>
+                        <a href="highpressure.html">High Pressure Cleaning Division</a>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+                <!--<li onclick=showSidebar()> <a href="#" class="icon" >
+                    <i class="fa fa-bars" ></i></a></li>-->
+            </ul>
+
+        </nav>
+        
+         
+    </div>
+    </header>
+    
+    <main>
+        <!-- Home Page Content -->
+        <section class="section1">
+            <div class="informer-block">
+            <h1>High-Pressure Cleaning Division</h1>
+            
+        </div>
+        </section>
+        <section class="section2">
+            <h2>Our Services</h2>
+            <div class="service-grid" id="Services">
+                <div class="service-item">Hot Water <br> Pressure Washer</div>
+                <div class="service-item">Cold Water <br> Pressure Washer</div>
+                <div class="service-item"> Wash Bay System</div>
+                <div class="service-item">Pressure Washer  <br>Detergent</div>
+                <div class="service-item">Pumps</div>
+                <div class="service-item">Industrial Vacuums</div>
+                <div class="service-item">Vacuum Trucks</div>
+                <div class="service-item">Sweepers</div>
+                <div class="service-item">Scrubbers</div>
+                <div class="service-item">Sweeper Scrubbers</div>
+                
+            </div>
+        </section>
+        <section class="section3">
+          
+            <h2>Contact Us</h2>
+            <div class="form-container" id="servic">
+                <div class="contact-info" id="nservice">
+                <h1 style="font-size: 2rem; font-family:Georgia, 'Times New Roman', Times, serif; text-align: center;">Say Hello</h1>
+                <h6 style="font-size: larger;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-weight: lighter;">Feel free to leave us a comment.!!</h6>
+               
+                <div class="phone" id="nservice">
+                    <h3>Phone</h3>
+                    <a href="tel:+27862750988"><p>(+27) 86-275-0988</p></a>
+                    <a href="tel:+27730495619"><p>(+27) 73-049-5619</p></a>
+                </div>
+                <div class="email" id="nservice"> 
+                <h3>Email</h3>
+                <a href="mailto:Info@kwadubatradingenterprise.co.za"><p>Info@kwadubatradingenterprise.co.za</p></a>
+               
+               </div>
+              
+
+
+
+                </div>
+           
+            <form id="form" class="contactDoc" action="mailto:Info@kwadubatradingenterprise.co.za">
+                <label id="first" for="name">Name:</label> <br>
+                <input id="first" type="text" id="name" name="name"><br>
+
+                <label id="Last" for="name">Last Name:</label> <br>
+                <input id="Last" type="text" id="name" name="name"><br>
+                
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br>
+                
+                <label for="message">Message:</label> <br>
+                <textarea id="message" name="message"></textarea><br>
+                
+                <input type="submit" value="Submit">
+                
+            </form>
+        </div>
+        </section>
+    </main>
+    
+    <footer>
+        <h1>Kwaduba Trading Enterprise</h1>
+        <div class="footer-columns">
+            <div class="footer-column">
+                
+              <i class="fas fa-envelope"></i><a class="footlink" href="mailto:Info@kwadubatradingenterprise.co.za">
+                <a class="footlink" href="mailto:Info@kwadubatradingenterprise.co.za"><p>Info@kwadubatradingenterprise.co.za</p></a>
+            </div>
+            <div class="footer-column">
+                
+                <i class="fas fa-map-marker-alt"></i><p>Olifantspoortjie farm nr51 Steelpoort</p>
+            </div>
+            <div class="footer-column">
+
+                <i class="fas fa-phone-alt"></i>
+                <a class="footlink" href="tel:+27730495619"><p>(+27) 73-049-5619</p></a>
+                <a class="footlink" href="tel:+27862750988"><p>(+27) 86-275-0988</p></a>
+            </div>
+        </div>
+        <div class="copyrightt">
+        <p id="copy">&copy; 2024 Kwaduba Trading Enterprise. All rights reserved. <br>
+            Created by Dejuel pty Ltd</p>
+        </div>
+    </footer>    
+    
+    <script>
+        function showSidebar(){
+            const sidebar=document.querySelector('.sidebar');
+            sidebar.style.display='flex'
+        }
+        function hideSidebar(){
+             const sidebar=document.querySelector('.sidebar');
+            sidebar.style.display='none'
+        }
+        function showService(){
+            const sidebar=document.querySelector('.sidebardropdown-content');
+            sidebar.style.display='block'
+        }
+
+    </script>
+</body>
+</html>
